@@ -16,7 +16,6 @@ const App= ()=> {
               <Route exact path="/" element={<Dashboard />} />
               <Route exact path="/edit/:id" element={<Edit />} />
               <Route exact path="/add" element={<Add />} />
-
             </Routes>
           </div>
         </BrowserRouter>

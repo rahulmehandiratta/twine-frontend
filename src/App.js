@@ -1,9 +1,7 @@
 import React from 'react'
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dashboard from "./pages/dashboard";
-import Edit from "./pages/edit";
-import Add from "./pages/add";
+import SignUp from "./pages/signup/signup";
 
 const App= ()=> {
 
@@ -13,10 +11,7 @@ const App= ()=> {
         <BrowserRouter>
           <div className="App">
             <Routes>
-              <Route exact path="/" element={<Dashboard />} />
-              <Route exact path="/edit/:id" element={<Edit />} />
-              <Route exact path="/add" element={<Add />} />
-
+              <Route exact path="/" element={<SignUp />} />
             </Routes>
           </div>
         </BrowserRouter>
